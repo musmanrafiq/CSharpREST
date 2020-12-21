@@ -14,7 +14,7 @@ namespace CSharpREST
         {
             IsStrictRestful = enforceRest;
         }
-        public async Task<(T, Error)> GetAsyn<T>(string url)
+        public async Task<(T, Error)> GetAsync<T>(string url)
         {
             try
             {
