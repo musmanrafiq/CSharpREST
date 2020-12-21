@@ -8,8 +8,8 @@ namespace ConsoleClient
     {
         static async Task Main(string[] args)
         {
-            var restClient = new HttpRest();
-            var (model, error) = await restClient.GetAsync<WeatherModel>("http://api.openweathermap.org/data/2.5/weather?q=Pakistan&appid=495cd65a3315d72309042f9e1c3791a");
+            var restClient = new RssFeed();
+            var (model, error) = await restClient.GetAsync("https://jaxenter.com/feed");
             Console.WriteLine("Hello World!");
         }
     }
