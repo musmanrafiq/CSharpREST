@@ -9,7 +9,7 @@ namespace ConsoleClient
         static async Task Main(string[] args)
         {
             var restClient = new RssFeed();
-            var (model, error) = await restClient.GetAsync("https://jaxenter.com/feed");
+            var (model, error) = await restClient.GetaAsync("http://feeds.feedburner.com/dave-brock");
             Console.WriteLine("Hello World!");
         }
     }
